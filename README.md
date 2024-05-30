@@ -4,7 +4,7 @@
 
 This is a real-time online chess game built with Node.js and Socket.IO.
 
-Live demo : 
+Live demo : https://realtime-multiplayer-chess-game.onrender.com/
 ## Features
 
 - Real-time multiplayer gameplay
