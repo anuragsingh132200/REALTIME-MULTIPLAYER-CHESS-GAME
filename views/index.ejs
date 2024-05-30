@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>CHESS GAME</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .square {
+            width: 62.5px;
+            height: 62.5px;
+        }
+
+        .black {
+            color: black;
+        }
+
+        .white {
+            color: white;
+        }
+
+        .light {
+            background-color: rgb(220, 186, 117);
+        }
+
+        .dark {
+            background-color: brown;
+        }
+
+        .peice {
+            cursor: grab;
+        }
+        .heading{
+          color:aliceblue;
+        }
+        .chessboard {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+  
+<div class="w-full h-screen bg-zinc-900 flex flex-col justify-center items-center">
+  <div class="heading"></div>
+    <div class="chessboard w-[500px] h-[500px] bg-red-400"></div>
+</div>
+<script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+<script type="text/javascript" src="/scripts/script.js"></script>
+</body>
+</html>
